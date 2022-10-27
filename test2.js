@@ -23,6 +23,7 @@ function problem2(cryptogram) {
         findRepetition(resolvedWord);
     }
     console.log(resolvedWord.join(""));
+    // 배열을 문자열로 합친 결과를 반환합니다.
     return resolvedWord.join("");
 }
 
