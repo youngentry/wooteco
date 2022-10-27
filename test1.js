@@ -8,13 +8,21 @@ function problem1(pobi, crong) {
     // 6. 예외사항을 추가합니다.
     // 6-(1) 모든 수는 2~399 페이지 사이의 수여야 합니다.
     if (pobiL <= 1 || pobiR <= 1 || crongL <= 1 || crongR <= 1) {
+        console.log(-11);
         return -1;
     }
     if (pobiL >= 400 || pobiR >= 400 || crongL >= 400 || crongR >= 400) {
+        console.log(-12);
         return -1;
     }
     // 6-(2) [오른쪽 페이지] - [왼쪽 페이지]의 값은 1 이어야 합니다.
     if (pobiR - pobiL !== 1 || crongR - crongL !== 1) {
+        console.log(-13);
+        return -1;
+    }
+    // 6-(3) 예외 왼쪽은 홀수, 오른쪽은 짝수 추가 ******************
+    if (pobiL % 2 !== 1 || crongL % 2 !== 1 || pobiR % 2 !== 0 || crongR % 2 !== 0) {
+        console.log(-14);
         return -1;
     }
 
@@ -50,18 +58,21 @@ function problem1(pobi, crong) {
     // 5.요구사항에 따라서 게임의 승자를 구합니다.
     // pobi 승리
     if (pobiNum > crongNum) {
+        console.log(1);
         return 1;
     }
     // crong 승리
     if (pobiNum < crongNum) {
+        console.log(2);
         return 2;
     }
     // 무승부
     if (pobiNum === crongNum) {
+        console.log(0);
         return 0;
     }
 }
 
-problem1();
+problem1([2, 3], [2, 3]);
 
 module.exports = problem1;
