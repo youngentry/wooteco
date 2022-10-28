@@ -14,7 +14,7 @@ function problem4(word) {
     const A_Code = "A".charCodeAt();
     const a_Code = "a".charCodeAt();
 
-    // 정반대 위치의 알파벳 아스키코드로 만드는 함수입니다.
+    // 정반대 위치의 알파벳 아스키코드로 변환하는 함수입니다.
     const alphaChange = () => {
         // 정반대 위치의 알파벳 아스키코드 = 아스키변환값 + (중앙에서부터 변환 목표까지의 거리) -1
         if (alphabetIdx < 14) {
