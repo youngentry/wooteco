@@ -20,13 +20,10 @@ function problem1(pobi, crong) {
         console.log(-13);
         return -1;
     }
-    // 6-(3) 예외 왼쪽은 홀수, 오른쪽은 짝수 추가 ******************
-    if (pobiL % 2 !== 1 || crongL % 2 !== 1 || pobiR % 2 !== 0 || crongR % 2 !== 0) {
-        console.log(-14);
-        return -1;
-    }
 
-    // 2-1, 3-1 : 각 자리 숫자를 모두 더하는 함수를 만듭니다.
+    /** 2-1, 3-1 : 각 자리 숫자를 모두 더하는 함수를 만듭니다.
+     * @params n => 페이지 숫자 Number
+     */
     const sum = (n) => {
         let sumIs = 0;
         while (n > 0) {
@@ -36,7 +33,9 @@ function problem1(pobi, crong) {
         return sumIs;
     };
 
-    // 2-2, 3-2 : 각 자리 숫자를 모두 곱하는 함수를 만듭니다.
+    /** 2-2, 3-2 : 각 자리 숫자를 모두 곱하는 함수를 만듭니다.
+     * @params n => 페이지 숫자 Number
+     */
     const multiply = (n) => {
         let multiplyIs = 1;
         while (n > 0) {
@@ -46,7 +45,10 @@ function problem1(pobi, crong) {
         return multiplyIs;
     };
 
-    // 4-1. 가장 큰 수를 본인의 점수로 만드는 함수를 만듭니다.
+    /**  4-1. 가장 큰 수를 본인의 점수로 만드는 함수를 만듭니다.
+     * @params nameL => 왼쪽 페이지 Number
+     * @params nameR => 오른쪽 페이지 Number
+     */
     const getBigNum = (nameL, nameR) => {
         return Math.max(sum(nameL), sum(nameR), multiply(nameL), multiply(nameR));
     };
