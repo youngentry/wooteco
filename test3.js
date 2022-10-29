@@ -14,7 +14,6 @@ function problem3(number) {
             n = Math.floor(n / 10);
         }
     };
-
     let count = 0;
 
     // 4. 1부터 입력받은 숫자(number)까지 1~3의 과정을 시행합니다.
