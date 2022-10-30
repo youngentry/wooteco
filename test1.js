@@ -1,6 +1,6 @@
 function problem1(pobi, crong) {
     // 1단계) 입력받은 배열을 각각 변수로 저장
-    [pobiLeftPage, pobiRightPage, crongLeftPage, crongRightPage] = [null, null, null, null];
+    // [pobiLeftPage, pobiRightPage, crongLeftPage, crongRightPage] = [null, null, null, null];
     if (Array.isArray(pobi)) {
         [pobiLeftPage, pobiRightPage, crongLeftPage, crongRightPage] = [pobi[0], pobi[1], crong[0], crong[1]];
     }
@@ -64,6 +64,6 @@ function problem1(pobi, crong) {
     }
 }
 
-problem1([2, 3], [2, 3]);
+problem1([99, 100], [2, 3]);
 
 module.exports = problem1;

@@ -5,9 +5,9 @@ function problem4(word) {
     // 2. 알파벳을 아스키코드로 변환합니다.
     const arrCode = arr.map((el) => el.charCodeAt());
 
-    // 3. ※알파벳인덱스(alphabetIdx) = ((a~z의 아스키코드 97~122) + 1) % (a의 아스키코드)
+    // 3. ※알파벳인덱스(alphabetIndex) = ((a~z의 아스키코드 97~122) + 1) % (a의 아스키코드)
     //    ㄴ예시) a:1, b:2, c:3, ... , m:13, n:14, ... , x:24, y:25, z:26
-    let alphabetIdx;
+    let alphabetIndex;
     const A_Code = "A".charCodeAt();
     const a_Code = "a".charCodeAt();
 
@@ -15,12 +15,12 @@ function problem4(word) {
     const alphaChange = () => {
         // 정반대 위치의 알파벳에 해당하는 아스키코드 = 아스키변환값 + (중앙에서부터 변환 목표까지의 거리 * 2) -1
         // 알파벳인덱스가 1~13일 때
-        if (alphabetIdx < 14) {
-            arrCode[i] += (14 - alphabetIdx) * 2 - 1;
+        if (alphabetIndex < 14) {
+            arrCode[i] += (14 - alphabetIndex) * 2 - 1;
         }
         // 알파벳인덱스가 14~26일 때
-        if (alphabetIdx >= 14) {
-            arrCode[i] -= (alphabetIdx - 13) * 2 - 1;
+        if (alphabetIndex >= 14) {
+            arrCode[i] -= (alphabetIndex - 13) * 2 - 1;
         }
     };
 
@@ -32,14 +32,14 @@ function problem4(word) {
 
         // 4. 대문자(A)일 때
         if (arrCode[i] < a_Code) {
-            // ※알파벳인덱스(alphabetIdx)를 구합니다.
-            alphabetIdx = (arrCode[i] + 1) % A_Code;
+            // ※알파벳인덱스(alphabetIndex)를 구합니다.
+            alphabetIndex = (arrCode[i] + 1) % A_Code;
             // 정반대 위치의 알파벳에 해당하는 아스키코드로 변환합니다.
             alphaChange();
         }
         // 5. 소문자(a)일 때
         if (arrCode[i] >= a_Code) {
-            alphabetIdx = (arrCode[i] + 1) % a_Code;
+            alphabetIndex = (arrCode[i] + 1) % a_Code;
             alphaChange();
         }
     }
