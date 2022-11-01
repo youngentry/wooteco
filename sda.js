@@ -1,8 +1,15 @@
-let i = 1000;
+const friends = { donut: 0, shakevan: 0 };
 
-while (i > 0) {
-    if ((i % 10) % 3 === 0) {
-    }
-    console.log(i);
-    i = Math.floor(i / 10);
-}
+console.log(friends);
+friends["donut"] += 1;
+console.log(friends);
+friends["donut"] += 1;
+console.log(friends);
+friends["donut"] += 1;
+console.log(friends);
+friends["donut"] += 1;
+console.log(friends);
+friends["donut"] += 1;
+console.log(friends);
+friends["donut"] += 1;
+console.log(friends);
