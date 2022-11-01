@@ -1,9 +1,9 @@
 const forms = [
-    ["jm@email.com", "제이엠"],
-    ["jason@email.com", "제이슨"],
-    ["woniee@email.com", "워니"],
-    ["mj@email.com", "엠제이"],
-    ["nowm111@email.com", "이제엠"],
+    ["kim@email.com", "김ㅡ이"],
+    ["nam@email.com", "ㅡ이야"],
+    ["choi@email.com", "최강"],
+    ["lee@email.com", "강합니다"],
+    ["jun@email.com", "왜ㅇㅡ이야"],
 ];
 
 function problem6(forms) {

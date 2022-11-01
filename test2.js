@@ -30,7 +30,7 @@ function problem2(cryptogram) {
     return wordArr.join("");
 }
 
-problem2("browoanoommnaon");
+problem2("zyalllelyz");
 
 // 1. a[i] == a[i+1] 인 문자열 찾기
 

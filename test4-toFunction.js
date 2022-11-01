@@ -30,8 +30,15 @@ function problem4(word) {
     for (i = 0; i < asciiAlphabetArray.length; i++) {
         let asciiAlphabet = asciiAlphabetArray[i];
 
-        // 띄어쓰기는 변홚대상에서 제외
+        // 띄어쓰기는 변환대상에서 제외
         if (asciiAlphabet === 32) {
+            continue;
+        }
+        // 알파벳만을 변환
+        if (asciiAlphabet < 65 || asciiAlphabet > 122) {
+            continue;
+        }
+        if (asciiAlphabet > 90 && asciiAlphabet < 97) {
             continue;
         }
 
@@ -47,7 +54,7 @@ function problem4(word) {
     return resultArray.join("");
 }
 
-problem4("R olev blf");
+problem4("abcdefghijklmnopqrstuvwxyz !@#!#  ");
 
 // -   1단계) 알파벳의 인덱스를 구하는 함수를 구현합니다.
 

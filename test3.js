@@ -23,7 +23,7 @@ function problem3(number) {
     return count;
 }
 
-problem3(35);
+problem3(333);
 
 // 1. 입력받은 숫자 n의 1의 자릿수가 3으로 나누어 떨어질 경우 박수 count에 1을 더합니다.
 // 1-2. 0은 항상 나누어떨어지기 때문에 조건처리합니다.

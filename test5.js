@@ -13,12 +13,12 @@ function problem5(money) {
     };
 
     // 1단계) 요소를 0으로 채운 길이가 9인 배열 생성
-    const arr = Array.from({ length: 9 }, (el) => 0);
+    const currencyArray = Array.from({ length: 9 }, (el) => 0);
 
     let changes = money;
 
     // 2단계) 배열의 길이만큼 for문을 시행
-    for (i = 0; i < arr.length; i++) {
+    for (i = 0; i < currencyArray.length; i++) {
         let currencyUnit = values[i];
         let count = 0;
         //  지불하려는 화폐의 단위로 나눈 몫이 0보다 크면
@@ -30,11 +30,13 @@ function problem5(money) {
         }
     }
 
+    console.log(currencyArray);
     return currencyArray;
 }
 
 problem5(50237);
 problem5(15000);
+problem5(49999);
 
 // 1. 0~8까지의 인덱스별로 화폐의 단위를 각각 저장한 객체를 만듭니다.
 // 2. 요소를 0으로 채운 길이가 9인 배열을 만듭니다.

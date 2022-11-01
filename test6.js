@@ -3,10 +3,16 @@ const forms = [
     ["jason@email.com", "제이슨"],
     ["woniee@email.com", "워니"],
     ["mj@email.com", "엠제이"],
-    ["nowm111@email.com", "이제엠"],
-    ["nowm222@email.com", "제이엠제이슨워니엠제이이제엠이슨제"],
-    ["nowm333@email.com", "이슨제"],
-    ["nowm32@email.com", "이"],
+    ["nowm@email.com", "이제엠"],
+    ["jasp@email.com", "박이김"],
+    ["jp@email.com", "김이박"],
+    ["qpw@email.com", "김이순"],
+    ["teemo@email.com", "티모"],
+    ["banana@email.com", "대위티모"],
+    ["secondJm@email.com", "제이엠"],
+    ["apple@email.com", "땷횱봵"],
+    ["stran@email.com", "횱봵으"],
+    ["zebra@email.com", "두글자이상의문자가연속적으로이제맞티모"],
 ];
 
 function problem6(forms) {
